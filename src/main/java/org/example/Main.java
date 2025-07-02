@@ -34,6 +34,8 @@ public class Main {
                     int qty = s.nextInt();
 
                     addOrder(pizzaTypes, quantities, pizza, qty);
+
+                    break;
                 }
 
                 case 2:
@@ -45,6 +47,8 @@ public class Main {
                     int newQuantity = s.nextInt();
 
                     updateOrder(quantities, orderNumber, newQuantity);
+
+                    break;
                 }
                 case 3:
                 {
@@ -53,16 +57,22 @@ public class Main {
                     index = index - 1;
 
                     removeOrder(pizzaTypes, quantities, index);
+
+                    break;
                 }
                 case 4:
                 {
                     printOrders(pizzaTypes, quantities);
+
+                    break;
                 }
 
                 case 5:
                 {
                     running = false;
                     System.out.println("--- Thank you! ---");
+
+                    break;
                 }
 
                 default:
